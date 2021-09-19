@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SendingMails">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    <EditText
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/recipient"
+        android:hint="Enter Recipient e-mail id"
+        android:textColor="@color/design_default_color_primary_dark"/>
+    <EditText
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/subject"
+        android:hint="Subject"
+        android:ems="10"
+        android:textColor="@color/design_default_color_primary_dark"/>
+
+        <EditText
+            android:id="@+id/body"
+            android:layout_width="wrap_content"
+            android:layout_height="165dp"
+            android:ems="50"
+            android:hint="Body"
+            android:textColor="@color/design_default_color_primary_dark" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:id="@+id/submit"
+        android:layout_marginTop="20dp"/>
+    </LinearLayout>
+
+</RelativeLayout>
